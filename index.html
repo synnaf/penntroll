@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- STYLESHETTS -->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Monofett&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- FONT STYLES -->
+   
+    <!-- JAVASCRIPT -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"></script>
+    <title>Trollshopen</title>
+  </head>
+  <body> 
+      <!-- TOPNAVIGATION -->
+      <div class="container-fluid navigationtop pt-2">
+          <div class="row navbar justify-content-between">
+              <div class="col-2">
+                <nav class="navbar navbar-expand-lg">
+                <!--  TOGGLE ICON SMALL SCREENS -->
+                <button class="toggler-button" type="button" data-toggle="dropdown" id="dropdownmenu" aria-haspopup="true"
+                  aria-expanded="false">
+                    <span>
+                        <i class="fas fa-bars fa-2x"></i>
+                    </span>
+                </button>
+                  <!-- NAVIGATION CONTENT -->
+                  <div class="dropdown navbar-dropdown" id="navbarToggler">
+                      <ul class="dropdown-menu mr-auto mt-2 mt-lg-0" arialabeledby="dropdownmenu">
+                          <li class="nav-item pr-4">
+                              <a class="nav-link" href="index.html">Home<span class="sr-only">(navigation)</span></a>
+                          </li>
+                          <li class="nav-item pr-4">
+                              <a class="nav-link" href="#webshop">Webshop</a>
+                          </li>
+                          <li class="nav-item pr-4">
+                              <a class="nav-link" href="#footer">Contact</a>
+                          </li>
+                      </ul>
+                  </div>
+                  </nav>
+              </div>
+              <!-- BRANDLOGO -->
+              <div class="col-2 align-items-center text-center navbar-brand">
+                  <img src="images/trollLogo.png" alt="logo" />
+              </div>
+              <!-- SHOPPINGCART LOGO -->
+              <span class="col-2">
+                  <a aria-label="Go to shoppingcart" href="checkout.html">
+                      <i class="fas fa-shopping-cart fa-2x shoppingcarticon" aria-hidden="true" title="Shoppingcart"></i>
+                  </a>
+                  <span class="badge badge-light">+1</span> 
+              </span>
+          </div>
+      </div>
+    <!-- HEADERIMAGE -->
+    <header>
+    <div class="container-fluid headerimage pb-4 mb-4">
+      <div class="row justify-content-center align-items-center text-center">
+        <p class="headertext col-12 col-md-5 mt-4 p-4">TROLL</p>
+        <img src="images/trollHeader.png" class="headerimage mt-4 col-6 col-sm-6 col-md-2" alt="troll huvud">
+        <p class="headertext col-12 col-md-5 mt-4 p-4">SHOPPEN</p> 
+      </div>
+    </div> 
+  </header>
+<!-- MAIN CONTENT -->
+  <main id="webshop" class="container-fluid">
+    <article class="row pt-4 mt-4">
+      <!-- LEFTSIDE NAVBAR -->
+      <div class="sidenav col-sm-12 col-md-3 col-lg-2 mt-4 d-none d-md-block d-lg-block">
+        <nav class="navbar sidenav navbar-light sticky-top">
+          <a class="nav-link active " href="#all">All Trolls</a>
+          <a class="nav-link" href="#big">Big Trolls</a>
+          <a class="nav-link" href="#small"> Small Trolls</a>
+          <a class="nav-link" href="#collection">The PRIDE Collection</a>
+          <a class="nav-link" href="#collection">The Hacker Collection</a>
+          <a class="nav-link" href="#collection">The NFL-Superstar Collection</a>
+        </nav>
+      </div>
+      <!-- WEBSHOP CONTENT -->
+      <section class="centercolumn col-md-9 col-lg-10">
+        <div class="carddeck row">
+          <!-- FIRST CARD -->
+          <div class="card col-xs-12 col-sm-6 col-md-6 col-lg-4 p-0">
+            <div class="card-body p-2 text-center">
+              <img src="images/bagare.jpg" class="card-img-top" alt="Picture" data-toggle="modal" data-target="#troll"/>
+              <h4 class="card-title p-2 font-weight-bold">Bagartrollet</h4>
+              <!-- MODAL -->
+              <div class="modal fade" id="troll" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLongTitle">Bagartrollet 399:-</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <!-- ABOUT THE TROLL -->
+                    <div class="modal-body">
+                      <img src="images/bagare.jpg" class="img-fluid img-modal" alt="Picture" />
+                      <h6>Kanske minns du de gamla Penntrollen i olika dofter och färger? Detta är en ny                                                                                    tappning av Lyckotrollen som många av oss känner igen från förr. De lanseras nu i
+                          Sverige som en rolig inredningsdetalj. Finns att köpa i ett antal olika färger både på kropp och hår.
+                          <br/>
+                          <br/>
+                          Med det här Lyckotrollet hyllar vi vår vardagshjälte, bagaren. Tillsammans med många andra hjältar i vardagen, 
+                          som målaren eller sjuksköterskan, gör bagaren en stor insats i vårt vardagliga liv. Låt oss därför hedra dessa 
+                          hjältar för sakerna vi ofta tar för givet och glömmer att tacka för.
+                      </h6>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn" data-dismiss="modal">+ Add to cart</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </div>
+          </div>
+        <!-- SECOND CARD -->
+        <div class="card col-xs-12 col-sm-6 col-md-6 col-lg-4 p-0">
+          <div class="card-body p-2 text-center">
+            <img src="images/gamer.jpg" class="card-img-top" alt="Picture" data-toggle="modal" data-target="#troll2"/>  
+            <h4 class="card-title p-2 font-weight-bold">Gamertrollet</h4>
+            <!-- MODAL -->
+            <div class="modal fade" id="troll2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Gamertrollet 259:-</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <!-- ABOUT THE TROLL -->
+                  <div class="modal-body">
+                    <img src="images/gamer.jpg" class="img-fluid" alt="Picture" />
+                    <h6>Kanske minns du de gamla Penntrollen i olika dofter och färger? Detta är en ny                                                                                    tappning av Lyckotrollen som många av oss känner igen från förr. De lanseras nu i
+                        Sverige som en rolig inredningsdetalj. Finns att köpa i ett antal olika färger både på kropp och hår.
+                        <br/>
+                        <br/>
+                        Med det här Lyckotrollet hyllar vi vår vardagshjälte, bagaren. Tillsammans med många andra hjältar i vardagen, 
+                        som målaren eller sjuksköterskan, gör bagaren en stor insats i vårt vardagliga liv. Låt oss därför hedra dessa 
+                        hjältar för sakerna vi ofta tar för givet och glömmer att tacka för.
+                    </h6>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn" data-dismiss="modal">+ Add to cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- THIRD CARD -->
+        <div class="card col-xs-12 col-sm-6 col-md-6 col-lg-4 p-0">             
+          <div class="card-body p-2 text-center">
+            <img src="images/healthy.jpg" class="card-img-top" alt="Picture" data-toggle="modal" data-target="#troll3"/>     
+            <h4 class="card-title p-2 font-weight-bold">Träningstrollet</h4>
+            <!-- Modal -->
+            <div class="modal fade" id="troll3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Träningstrollet 375:-</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <!-- ABOUT THE TROLL -->
+                  <div class="modal-body">
+                    <img src="images/healthy.jpg" class="img-fluid" alt="Picture" />
+                    <h6>Kanske minns du de gamla Penntrollen i olika dofter och färger? Detta är en ny                                                                                    tappning av Lyckotrollen som många av oss känner igen från förr. De lanseras nu i
+                        Sverige som en rolig inredningsdetalj. Finns att köpa i ett antal olika färger både på kropp och hår.
+                        <br/>
+                        <br/>
+                        Med det här Lyckotrollet hyllar vi vår vardagshjälte, bagaren. Tillsammans med många andra hjältar i vardagen, 
+                        som målaren eller sjuksköterskan, gör bagaren en stor insats i vårt vardagliga liv. Låt oss därför hedra dessa 
+                        hjältar för sakerna vi ofta tar för givet och glömmer att tacka för.
+                    </h6>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn" data-dismiss="modal">+ Add to cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- FOURTH CARD -->
+        <div class="card col-xs-12 col-sm-6 col-md-6 col-lg-4 p-0">             
+          <div class="card-body p-2 text-center">
+            <img src="images/jagare.jpg" class="card-img-top" alt="Picture" data-toggle="modal" data-target="#troll4"/>     
+            <h4 class="card-title p-2 font-weight-bold">Jägartrollet</h4>
+              <!-- Modal -->
+              <div class="modal fade" id="troll4" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLongTitle">Jägartrollet 411:-</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <!-- ABOUT THE TROLL -->
+                    <div class="modal-body">
+                      <img src="images/jagare.jpg" class="img-fluid" alt="Picture" />
+                      <h6>Kanske minns du de gamla Penntrollen i olika dofter och färger? Detta är en ny                                                                                    tappning av Lyckotrollen som många av oss känner igen från förr. De lanseras nu i
+                          Sverige som en rolig inredningsdetalj. Finns att köpa i ett antal olika färger både på kropp och hår.
+                          <br/>
+                          <br/>
+                          Med det här Lyckotrollet hyllar vi vår vardagshjälte, bagaren. Tillsammans med många andra hjältar i vardagen, 
+                          som målaren eller sjuksköterskan, gör bagaren en stor insats i vårt vardagliga liv. Låt oss därför hedra dessa 
+                          hjältar för sakerna vi ofta tar för givet och glömmer att tacka för.
+                      </h6>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn" data-dismiss="modal">+ Add to cart</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+        <!-- FIFTH CARD -->
+        <div class="card col-xs-12 col-sm-6 col-md-6 col-lg-4 p-0">             
+          <div class="card-body p-2 text-center">
+            <img src="images/malare.jpg" class="card-img-top" alt="Picture" data-toggle="modal" data-target="#troll5"/>     
+            <h4 class="card-title p-2 font-weight-bold">Målartroll</h4>
+            <!-- Modal -->
+            <div class="modal fade" id="troll5" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Målartrollet 420:-</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <!-- ABOUT THE TROLL -->
+                  <div class="modal-body">
+                    <img src="images/malare.jpg" class="img-fluid" alt="Picture" />
+                    <h6>Kanske minns du de gamla Penntrollen i olika dofter och färger? Detta är en ny                                                                                    tappning av Lyckotrollen som många av oss känner igen från förr. De lanseras nu i
+                        Sverige som en rolig inredningsdetalj. Finns att köpa i ett antal olika färger både på kropp och hår.
+                        <br/>
+                        <br/>
+                        Med det här Lyckotrollet hyllar vi vår vardagshjälte, bagaren. Tillsammans med många andra hjältar i vardagen, 
+                        som målaren eller sjuksköterskan, gör bagaren en stor insats i vårt vardagliga liv. Låt oss därför hedra dessa 
+                        hjältar för sakerna vi ofta tar för givet och glömmer att tacka för.</h6>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn" data-dismiss="modal">+ Add to cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- SIXTH CARD --> 
+        <div class="card col-xs-12 col-sm-6 col-md-6 col-lg-4 p-0">             
+          <div class="card-body p-2 text-center">
+            <img src="images/sjuksyrra.jpg" class="card-img-top" alt="Picture" data-toggle="modal" data-target="#troll6"/>     
+            <h4 class="card-title p-2 font-weight-bold">Sjuksyrretrollet</h4>
+            <!-- Modal -->
+            <div class="modal fade" id="troll6" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Sjukesyrretrollet 499:-</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <!-- ABOUT THE TROLL -->
+                  <div class="modal-body">
+                    <img src="images/sjuksyrra.jpg" class="img-fluid" alt="Picture" />
+                    <h6>Kanske minns du de gamla Penntrollen i olika dofter och färger? Detta är en ny                                                                                    tappning av Lyckotrollen som många av oss känner igen från förr. De lanseras nu i
+                        Sverige som en rolig inredningsdetalj. Finns att köpa i ett antal olika färger både på kropp och hår.
+                        <br/>
+                        <br/>
+                        Med det här Lyckotrollet hyllar vi vår vardagshjälte, bagaren. Tillsammans med många andra hjältar i vardagen, 
+                        som målaren eller sjuksköterskan, gör bagaren en stor insats i vårt vardagliga liv. Låt oss därför hedra dessa 
+                        hjältar för sakerna vi ofta tar för givet och glömmer att tacka för.
+                      </h6>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn" data-dismiss="modal">+ Add to cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- SEVEN CARD -->
+        <div class="card col-xs-12 col-sm-6 col-md-6 col-lg-4 p-0">             
+          <div class="card-body p-2 text-center">
+            <img src="images/snickare.jpg" class="card-img-top" alt="Picture" data-toggle="modal" data-target="#troll7"/>     
+            <h4 class="card-title p-2 font-weight-bold">Snickartrollet</h4>
+            <!-- Modal -->
+            <div class="modal fade" id="troll7" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Snickartrollet 379:-</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <!-- ABOUT THE TROLL -->
+                  <div class="modal-body">
+                    <img src="images/snickare.jpg" class="img-fluid" alt="Picture" />
+                    <h6>Kanske minns du de gamla Penntrollen i olika dofter och färger? Detta är en ny                                                                                    tappning av Lyckotrollen som många av oss känner igen från förr. De lanseras nu i
+                        Sverige som en rolig inredningsdetalj. Finns att köpa i ett antal olika färger både på kropp och hår.
+                        <br/>
+                        <br/>
+                        Med det här Lyckotrollet hyllar vi vår vardagshjälte, bagaren. Tillsammans med många andra hjältar i vardagen, 
+                        som målaren eller sjuksköterskan, gör bagaren en stor insats i vårt vardagliga liv. Låt oss därför hedra dessa 
+                        hjältar för sakerna vi ofta tar för givet och glömmer att tacka för.
+                    </h6>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn" data-dismiss="modal">+ Add to cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- EIGHT CARD --> 
+        <div class="card col-xs-12 col-sm-6 col-md-6 col-lg-4 p-0">             
+          <div class="card-body p-2 text-center">
+            <img src="images/super.jpg" class="card-img-top" alt="Picture" data-toggle="modal" data-target="#troll8"/>     
+            <h4 class="card-title p-2 font-weight-bold">Supertrollet</h4>
+            <!-- Modal -->
+            <div class="modal fade" id="troll8" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Supertrollet 999:-</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <!-- ABOUT THE TROLL -->
+                  <div class="modal-body">
+                    <img src="images/super.jpg" class="img-fluid" alt="Picture" />
+                    <h6>Kanske minns du de gamla Penntrollen i olika dofter och färger? Detta är en ny                                                                                    tappning av Lyckotrollen som många av oss känner igen från förr. De lanseras nu i
+                        Sverige som en rolig inredningsdetalj. Finns att köpa i ett antal olika färger både på kropp och hår.
+                        <br/>
+                        <br/>
+                        Med det här Lyckotrollet hyllar vi vår vardagshjälte, bagaren. Tillsammans med många andra hjältar i vardagen, 
+                        som målaren eller sjuksköterskan, gör bagaren en stor insats i vårt vardagliga liv. Låt oss därför hedra dessa 
+                        hjältar för sakerna vi ofta tar för givet och glömmer att tacka för.
+                    </h6>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn" data-dismiss="modal">+ Add to cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </section>         
+    </article>
+  </main>
+  <!-- FOOTER -->
+  <footer class="container-fluid mt-4 pt-4" id="footer">
+                <section class="row text-center justify-content-sm-center align-items-center">  
+                    <div class="socialmediaicons col-12 col-lg-6 col-md-6"> 
+                        <a aria-label="Go to twitter" href="https://www.twitter.com">
+                            <i class="fab fa-twitter fa-2x" aria-hidden="true" title="Twitter icon"></i>
+                        </a>
+                        <a aria-label="Go to instagram" href="https://www.instagram.com">
+                            <i class="fab fa-instagram fa-2x" aria-hidden="true" title="Instagram icon"></i>
+                        </a>
+                        <a aria-label="Go to facebook" href="https://www.facebook.com">
+                            <i class="fab fa-facebook fa-2x" aria-hidden="true" title="Facebook icon"></i>
+                        </a>
+                    </div>
+                    <div class="adress col-12 col-lg-6 ">
+                        <adress>
+                          <br />
+                            <a class="mt-4" href="mailto:penntroll@info.com">penntroll@info.com</a>
+                            <p>
+                            Trollgatan 16 <br />
+                            123 45 Trollskogen, Sweden
+                            </p>
+                        </adress>
+                    </div>
+                        <div class="col-12 pt-4 mb-2 font-small">
+                            <p>&copy; Fanny, Pontus och Yamandu 2019</p>
+                        </div>
+                </section>
+  </footer>
+  <script src="https://kit.fontawesome.com/6a02e6dafe.js" crossorigin="anonymous"></script>
+</body>
+</html>

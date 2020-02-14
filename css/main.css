@@ -1,0 +1,118 @@
+/* HEADER IMAGE */
+.headerimage {
+  background-color: #F4F4F4; }
+  .headerimage .headertext {
+    font-family: 'Monofett', cursive;
+    font-size: 50pt;
+    color: #58B19F; }
+
+/* LEFT SIDENAV */
+.sidenav {
+  background-color: white;
+  font-family: 'Merriweather', serif;
+  font-size: 14pt; }
+  .sidenav a {
+    color: black; }
+  .sidenav a:hover {
+    color: #58B19F; }
+
+/* MAIN CONTENT WEBSHOP */
+.card {
+  border: none; }
+  .card .card-img-top:hover {
+    opacity: 0.5;
+    cursor: pointer;
+    transition: 0.4s; }
+  .card .card-title {
+    font-family: 'Merriweather', cursive;
+    font-size: 16pt;
+    color: #172E30; }
+
+/* MODAL */
+.modal {
+  font-family: 'Merriweather', cursive;
+  color: #172E30; }
+  .modal .modal-title {
+    font-size: 16pt; }
+  .modal .modal-body {
+    font-size: 12pt; }
+  .modal .modal-footer .btn {
+    background-color: #172E30;
+    color: #F4F4F4; }
+  .modal .modal-footer .btn:hover {
+    background-color: #F4F4F4;
+    color: #172E30; }
+
+/* SHOPPINGCART BOX & ORDERFROM BOX */
+article {
+  font-family: 'Merriweather', serif;
+  font-size: 25px;
+  color: black; }
+  article .shoppingcart {
+    border: 10px solid #58B19F;
+    border-radius: 10px;
+    height: auto;
+    background-color: #58B19F;
+    box-shadow: 0px 2px 8px grey; }
+  article .btn {
+    background-color: #172E30;
+    color: #F4F4F4; }
+  article .btn:hover {
+    background-color: #F4F4F4;
+    color: #172E30; }
+  article .orderform {
+    background-color: #58B19F;
+    border-radius: 10px;
+    border: 10px solid #58B19F;
+    height: auto;
+    box-shadow: 0px 4px 10px grey; }
+
+h3 {
+  font-family: 'Monofett', cursive;
+  font-size: 8vh; }
+
+/* THANK YOU BOX */
+.thankyou {
+  color: black;
+  border: 10px solid #58B19F;
+  border-radius: 10px;
+  background-color: #58B19F;
+  height: auto; }
+  .thankyou .p2-checkout {
+    font-family: 'Merriweather', serif;
+    font-size: 25px; }
+
+main {
+  min-height: 70vh; }
+
+/* TOP MENU CLASSES */
+.navigationtop {
+  font-family: 'Merriweather', serif;
+  background-color: #58B19F;
+  font-size: 16pt;
+  box-shadow: 0px 0px 8px grey; }
+  .navigationtop .toggler-button {
+    border: none;
+    color: white;
+    background-color: #58B19F; }
+  .navigationtop .navbar-brand,
+  .navigationtop .shoppingcarticon {
+    color: white; }
+  .navigationtop .dropdown-menu {
+    background-color: #58B19F; }
+    .navigationtop .dropdown-menu a {
+      text-decoration: none;
+      font-size: 16pt;
+      color: white; }
+    .navigationtop .dropdown-menu a:hover {
+      color: black; }
+    .navigationtop .dropdown-menu a:active {
+      color: black; }
+
+/* FOOTER  */
+footer {
+  background-color: #58B19F;
+  font-family: 'Merriweather', serif;
+  color: black; }
+  footer a {
+    color: black; }

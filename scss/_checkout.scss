@@ -1,0 +1,47 @@
+/* SHOPPINGCART BOX & ORDERFROM BOX */
+article { 
+    font-family: 'Merriweather', serif;
+    font-size: 25px;
+    color: black;
+    
+    .shoppingcart {
+        border: 10px solid #58B19F;
+        border-radius: 10px;
+        height: auto;
+        background-color: #58B19F; 
+        box-shadow: 0px 2px 8px grey;  
+    }
+    .btn {
+        background-color: #172E30;
+        color: #F4F4F4; }
+    
+    .btn:hover {
+        background-color: #F4F4F4;
+        color: #172E30;
+    }
+    .orderform {
+        background-color: #58B19F;
+        border-radius: 10px;
+        border: 10px solid #58B19F;
+        height: auto; 
+        box-shadow: 0px 4px 10px grey; 
+    }
+}
+
+h3 {
+    font-family: 'Monofett', cursive;
+    font-size: 8vh; 
+}  
+
+  /* THANK YOU BOX */
+.thankyou {
+    color: black;
+    border: 10px solid #58B19F;
+    border-radius: 10px;
+    background-color: #58B19F;
+    height: auto; 
+    .p2-checkout {
+        font-family: 'Merriweather', serif;
+        font-size: 25px;
+    }
+}

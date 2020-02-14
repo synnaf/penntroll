@@ -1,0 +1,55 @@
+/* HEADER IMAGE */
+.headerimage {
+    background-color:#F4F4F4;
+    .headertext  {
+      font-family: 'Monofett', cursive;
+      font-size: 50pt;
+      color: #58B19F; 
+    } 
+  }
+
+/* LEFT SIDENAV */
+.sidenav {
+    background-color: white; 
+    font-family: 'Merriweather', serif;
+    font-size:14pt;
+   a {
+    color:black;
+    }
+    a:hover {
+    color: #58B19F;
+    }
+ }
+
+/* MAIN CONTENT WEBSHOP */ 
+.card {
+  border:none;
+  .card-img-top:hover {
+    opacity: 0.5; 
+    cursor: pointer; 
+    transition: 0.4s; }
+  .card-title {
+    font-family: 'Merriweather', cursive;
+    font-size: 16pt;
+    color:#172E30;
+    }
+}
+/* MODAL */
+.modal {
+  font-family: 'Merriweather', cursive;
+  color:#172E30;
+  .modal-title {
+    font-size: 16pt;
+    }
+ .modal-body {
+   font-size:12pt;
+  } 
+  .modal-footer .btn {
+    background-color: #172E30;
+    color: #F4F4F4; 
+  }
+  .modal-footer .btn:hover {
+    background-color: #F4F4F4;
+    color: #172E30;
+  }
+}

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="sv">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <!-- STYLESHETTS -->
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+              integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+            <link rel="stylesheet" href="css/main.css"/>
+            <link href="https://fonts.googleapis.com/css?family=Merriweather|Monofett&display=swap" rel="stylesheet">
+            <!-- FONT STYLES -->
+            <!-- JAVASCRIPT -->
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+              integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+              crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+              integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+              crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+              integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+              crossorigin="anonymous"></script>
+            <script src="https://kit.fontawesome.com/6a02e6dafe.js" crossorigin="anonymous"></script> 
+            <title>Trollshoppen</title>
+    </head>
+    <body>
+    <header>
+      <!-- TOPNAVIGATION -->
+      <div class="container-fluid navigationtop pt-2">
+            <div class="row navbar justify-content-between">
+                <div class="col-2">
+                  <nav class="navbar navbar-expand-lg">
+                  <!--  TOGGLE ICON SMALL SCREENS -->
+                  <button class="toggler-button" type="button" data-toggle="dropdown" id="dropdownmenu" aria-haspopup="true"
+                    aria-expanded="false">
+                      <span>
+                          <i class="fas fa-bars fa-2x"></i>
+                      </span>
+                  </button>
+                    <!-- NAVIGATION CONTENT -->
+                    <div class="dropdown navbar-dropdown" id="navbarToggler">
+                        <ul class="dropdown-menu mr-auto mt-2 mt-lg-0" arialabeledby="dropdownmenu">
+                            <li class="nav-item pr-4">
+                                <a class="nav-link" href="index.html">Home<span class="sr-only">(navigation)</span></a>
+                            </li>
+                            <li class="nav-item pr-4">
+                                <a class="nav-link" href="index.html#webshop">Webshop</a>
+                            </li>
+                            <li class="nav-item pr-4">
+                                <a class="nav-link" href="#footer">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    </nav>
+                </div>
+              <!-- BRANDLOGO -->
+              <div class="col-2 align-items-center text-center navbar-brand">
+                  <img src="images/trollLogo.png" alt="logo" />
+              </div>
+              <!-- SHOPPINGCART LOGO -->
+              <span class="col-2">
+                  <a aria-label="Go to shoppingcart" href="checkout.html">
+                      <i class="fas fa-shopping-cart fa-2x shoppingcarticon" aria-hidden="true" title="Shoppingcart"></i>
+                  </a>
+                  <span class="badge badge-light">+1</span> 
+              </span>
+          </div>
+      </div>
+  </header>
+<main>
+  <article id="checkout" class="container-fluid">
+            <div class="container shoppingcart mt-4" id="order">
+                <div class="row justify-content-center text-center">
+                    <section class="col-12 col-md-9 col-lg-9">
+                        <div class="col-12 mt-4"><h3>Shoppingcart</h3></div>
+                          <div class="row">
+                            <div class="col-4">Troll</div>
+                            <div class="col-4">Pris</div>
+                            <div class="col-4">Antal</div>
+                          </div> 
+                          <div class="row">
+                              <div class="col-4">Supertroll</div>
+                              <div class="col-4">999kr</div>
+                              <div class="col-4">x1</div>
+                          </div>
+                          <div class="row">
+                              <div class="col-4">Bagartroll</div>
+                              <div class="col-4">249kr</div>
+                              <div class="col-4">x4</div>
+                          </div>
+                          <hr>
+                          <div class="row">
+                              <div class="col-4"></div>
+                              <div class="col-4">1995 kr</div>
+                              <div class="col-4">x5</div>
+                          </div>  
+                          <hr>
+                          <div class="row justify-content-center"> 
+                              <div class="submitbutton col-4 text-center m-4 p-2"> 
+                                  <button class="btn"  data-toggle="collapse" href="#collapseshoppingcart" role="button" aria-expanded="false" aria-controls="collapseshoppingcart">Order</button>
+                              </div>
+                          </div>
+                    </section> 
+                </div>
+            </div> 
+            <section class="container orderform collapse multi-collapse" id="collapseshoppingcart">  
+            <section class="row justify-content-center">                          
+                <div class="col-12 col-md-9 col-lg-9"> 
+                    <form class="form-group" action="thanks.html">
+                        <h3 class="mt-4 text-center">Payment and shipping information</h3>
+                        <!-- form container with label / input = item / child -->
+                        <div class="mb-4 form-row justify-content-center">
+                            <div class="col-lg-6 col-md-6 mt-2">
+                                <label for="firstname col-form-label">First name:</label>
+                                <input class="form-control" type="text" name="namn" id="firstname" placeholder="Enter your name" class="text-input" required>
+                            </div>
+                            <div class="col-lg-6 col-md-6 mt-2">
+                                <label for="lastname col-form-label">Surname:</label>
+                                <input class="form-control" type="text" name="efternamn" id="surname" placeholder="Enter your surname" required>
+                            </div>
+                            <div class="col-lg-6 col-md-6 mt-2">  
+                                <label for="email col-form-label">E-mail:</label>
+                                <input class="form-control" type="email" name="email" id="email" placeholder="a@a.com" required>
+                            </div>
+                            <div class="col-lg-6 col-md-6 mt-2">   
+                                <label for="adress col-form-label">Street adress:</label>
+                                <input class="form-control" type="text" name="adress" id="adress" placeholder="Enter your street adress" required>
+                            </div>
+                            <div class="col-4 mt-2">
+                                <label for="zip col-form-label">Zip code:</label>
+                                <input class="form-control" type="number" name="postkod" placeholder="123 45" pattern="\d{3}\s?\d{2}" id="zip" required>
+                            </div>
+                            <div class="col-sm-6 col-lg-8 mt-2">  
+                                <label for="money col-form-label">Credit card no:</label>
+                                <input class="form-control" type="number" name="givemethemoneyz" id="givemethemoneyz" placeholder="12 numbers no space or -" required>
+                            </div> 
+                        </div>
+                        <div class="row justify-content-center"> 
+                            <div class="submitbutton col-4 text-center m-4 p-2"> 
+                                <button class="btn" type="submit" value="submit" data-toggle="collapse" href="#collapseform" role="button" aria-expanded="false" aria-controls="collapseform">Order</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>     
+            </section>                                   
+    </section>
+  </article>
+</main>
+  <!-- FOOTER -->
+  <footer class="container-fluid mt-4 pt-4" id="footer">
+        <section class="row text-center justify-content-sm-center align-items-center">  
+            <div class="socialmediaicons col-12 col-lg-6 col-md-6"> 
+                <a aria-label="Go to twitter" href="https://www.twitter.com">
+                    <i class="fab fa-twitter fa-2x" aria-hidden="true" title="Twitter icon"></i>
+                </a>
+                <a aria-label="Go to instagram" href="https://www.instagram.com">
+                    <i class="fab fa-instagram fa-2x" aria-hidden="true" title="Instagram icon"></i>
+                </a>
+                <a aria-label="Go to facebook" href="https://www.facebook.com">
+                    <i class="fab fa-facebook fa-2x" aria-hidden="true" title="Facebook icon"></i>
+                </a>
+            </div>
+            <div class="adress col-12 col-lg-6 ">
+                <adress>
+                  <br />
+                    <a class="mt-4" href="mailto:penntroll@info.com">penntroll@info.com</a>
+                    <p>
+                    Trollgatan 16 <br />
+                    123 45 Trollskogen, Sweden
+                    </p>
+                </adress>
+            </div>
+                <div class="col-12 pt-4 mb-2 font-small">
+                    <p>&copy; Fanny, Pontus och Yamandu 2019</p>
+                </div>
+        </section>
+</footer>
+<script src="https://kit.fontawesome.com/6a02e6dafe.js" crossorigin="anonymous"></script>
+</body>
+</html>
